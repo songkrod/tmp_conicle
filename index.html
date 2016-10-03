@@ -17,240 +17,28 @@
 		<script type='text/javascript' src='public/modules/page/config/page.client.route.js'></script>
 		<!-- Controller -->
 		<script type='text/javascript' src='public/modules/page/controller/index.client.controller.js'></script>
+		<script type='text/javascript' src='public/modules/page/controller/solution.client.controller.js'></script>
+		<script type='text/javascript' src='public/modules/page/controller/product.client.controller.js'></script>
+		<script type='text/javascript' src='public/modules/page/controller/customer.client.controller.js'></script>
+		<script type='text/javascript' src='public/modules/page/controller/contact.client.controller.js'></script>
 		<!-- Application -->
 		<script type='text/javascript' src='public/application.js'></script>
 	</head>
-	<body id="cnc-main">
-		<section id="hook">
+	<body id="main">
+		<div data-ui-view=""></div>
+		<div data-ui-view="solution"></div>
+		<div data-ui-view="product"></div>
+		<div data-ui-view="our-customer"></div>
+		<div data-ui-view="contact-us"></div>
+		<div id="foot">
 			<div class="wrap">
-				<h1>Re-thinking eLearning</h1>
-				<h5>Develop, Engage, Track Results with Blended Learning PLatform</h5>
-				<p>Redefining Enterprise Training and HRD with Mobile First Learning solution making it Faster, Easier, and Smarter Anywhere, Anytime.</p>
-				<div class="btn">
-					<button class="red">Learn more</button>
-					<button>Request for Demo</button>
+				<div class="logo"></div>
+				<div class="copyright">
+					<span>Copyright 2016 Conicle Co.,Ltd.</span>
 				</div>
 			</div>
-		</section>
-		<section id="box1">
-			<ul>
-				<li><span class="logo-ais"></span></li>
-				<li><span class="logo-unilever"></span></li>
-				<li><span class="logo-pacrim"></span></li>
-				<li><span class="logo-aims"></span></li>
-				<li><span class="logo-cc"></span></li>
-				<li><span class="logo-hm"></span></li>
-			</ul>
-		</section>
-		<section id="box2">
-			<div class="wrap">
-				<h3>Mobile First Platforms for Team.</h3>
-				<p>Empowering your team & organization to do more and achieve more by learning and connecting faster, easier and smarter anywhere anytime.</p>
-				<ul>
-					<li>
-						<h6>Mobile Learning. Simple, Fast, Easy.</h6>
-						<p>Learning can use cloud-based online training library anywhere, anytime from mobile-friendly.</p>
-					</li>
-					<li>
-						<h6>Blended Media Anywhere Anytime</h6>
-						<p>Learning can use cloud-based online training library anywhere, anytime from mobile-friendly.</p>
-					</li>
-					<li>
-						<h6>Personalized Learning Path</h6>
-						<p>Learning can use cloud-based online training library anywhere, anytime from mobile-friendly.</p>
-					</li>
-					<li>
-						<h6>Result Tracking and Data Analytics</h6>
-						<p>Learning can use cloud-based online training library anywhere, anytime from mobile-friendly.</p>
-					</li>
-				</ul>
-				<div class="bg">
-					<img src="public/images/overview.png">
-				</div>
-			</div>
-		</section>
-		<section id="box3">
-			<div class="wrap">
-				<h3>Gain a competitive edge</h3>
-				<p>Based on CEB, INc. 2015 study of 2,000 customers</p>
-				<div class="box-wrap">
-					<div class="box">
-						<h6>Real-world Implementation</h6>
-						<span>89%</span>
-						<p>of members said Pluralsight has helped them learn a skill needed for their company or job.</p>
-					</div>
-					<div class="box">
-						<h6>More time and productivity</h6>
-						<span>84</span>
-						<p>hours per year saved from watching Pluralsight just 1 hour per week due to increased productivity.</p>
-					</div>
-					<div class="box">
-						<h6>Stay current</h6>
-						<span>93%</span>
-						<p>of managers say Pluralsight is an important tool for their teams to keep up with the fast pace of change in technology.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="box4">
-			<div class="wrap">
-				<h3>Mobile First Platforms for Team.</h3>
-				<div class="image">
-					<img src="public/images/circle.png">
-				</div>
-				<h5>Team Development . Knowledge Management . Internal Communication</h5>
-				<div class="box-wrap">
-					<div class="box">
-						<span>Ondemand Learning</span>
-					</div>
-					<div class="box">
-						<span>Ondemand Learning</span>
-					</div>
-					<div class="box">
-						<span>Ondemand Learning</span>
-					</div>
-					<div class="box">
-						<span>Ondemand Learning</span>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="box5">
-			<div class="wrap">
-				<div class="phone">
-					<img src="public/images/ondemand.png">
-				</div>
-				<div class="content">
-					<div class="title-wrap">
-						<div class="title">
-							<h3>Conicle</h3>
-							<h1>Ondemand</h1>
-						</div>
-						<div class="title">
-							<h3>Conicle</h3>
-							<h1>Live</h1>
-						</div>
-					</div>
-					<h3>All-in-One Ondemand Training</h3>
-					<p>Develop people anywhere, anytime via web and mobile includeing Online Courses, Interactive Test, Programs, Assignment, Registration, Notification, Progress Tracking, Discussion board, and also Administration for Content Management, Dashboard and Report</p>
-					<div class="feature-list">
-						<ul>
-							<li>Feature</li>
-							<li>Feature</li>
-							<li>Feature</li>
-							<li>Feature</li>
-							<li>Feature</li>
-							<li>Feature</li>
-							<li>Feature</li>
-							<li>Feature</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="foot">
-					<div class="box">
-						<h4>Onboard</h4>
-						<p>The digital marketing solution to enhance conversion, aligned with your business and</p>
-					</div>
-					<div class="box">
-						<h4>KM System</h4>
-						<p>Enriching your digital touch point with crafted experience on Web & Mobile. Not only giving</p>
-					</div>
-					<div class="box">
-						<h4>Internal Commu</h4>
-						<p>Building breakthrough customer engagement solution with digital platforms to create the bold</p>
-					</div>
-				</div>
-		</section>
-		<section id="box6">
-			<div class="wrap">
-				<div class="phone">
-					<img src="public/images/connect.png">
-				</div>
-				<div class="content">
-					<div class="title-wrap">
-						<div class="title">
-							<h3>Conicle</h4>
-							<h1>Connect</h2>
-						</div>
-					</div>
-					<h3>Event Management Platform</h3>
-					<p>Event & Workshop Center including Workshops Update, Online Register, Check-in, Prework, Event Activities, Evaluation, Testing, Post Event and also Administration for articipant Insight, Check-in Report, Activity Report, and Evaluation Report</p>
-					<div class="feature-list">
-						<ul>
-							<li>Feature</li>
-							<li>Feature</li>
-							<li>Feature</li>
-							<li>Feature</li>
-							<li>Feature</li>
-							<li>Feature</li>
-							<li>Feature</li>
-							<li>Feature</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="foot">
-				<div class="box">
-					<h4>Workshop</h4>
-					<p>The solution to connect people in your organization together via web & mobile worked seamlessly</p>
-				</div>
-				<div class="box">
-					<h4>Event</h4>
-					<p>Developing your team with Innovative Ondemand Training Solution on Web & Mobile anywhere</p>
-				</div>
-				<div class="box">
-					<h4>Survey</h4>
-					<p>Revolutionizing the organization's internal communication with Conicle CHAT - theenterprise</p>
-				</div>
-			</div>
-		</section>
-		<section id="box7">
-			<div class="wrap">
-				<h3>Administration System</h3>
-				<p>Dashboard, Account and Content Management</p>
-				<div class="box-wrap">
-					<div class="box">
-						<h5>User Account Management</h5>
-						<ul>
-							<li>User(Learner) Management</li>
-							<li>Department(Group) Management</li>
-							<li>Admin Account Management</li>
-							<li>ADmin Account Management</li>
-						</ul>
-					</div>
-					<div class="box">
-						<h5>User Account Management</h5>
-						<ul>
-							<li>User(Learner) Management</li>
-							<li>Department(Group) Management</li>
-							<li>Admin Account Management</li>
-							<li>ADmin Account Management</li>
-						</ul>
-					</div>
-					<div class="box">
-						<h5>User Account Management</h5>
-						<ul>
-							<li>User(Learner) Management</li>
-							<li>Department(Group) Management</li>
-							<li>Admin Account Management</li>
-							<li>ADmin Account Management</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="bg"></div>
-		</section>
-		<section id="box8">
-			<div class="image">
-				<img src="public/images/circle2.jpg">
-			</div>
-		</section>
-		<section id="box9">
-			//
-		</section>
-		<section id="box10"></section>
-		<div id="nav" data-sticky-nav='{name:"Hi"}'>
+		</div>
+		<div id="nav" data-sticky-nav=''>
 			<div class="logo">
 				<div class="image"></div>
 				<span>Empower Smart Enterprise</span>
