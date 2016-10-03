@@ -85,25 +85,47 @@ section {
 	height: 70px;
 	position: fixed;
 	padding: 10px;
+	color: $white;
 
 	@include box-sizing;
+	@include animate();
 
 	.logo {
+		color: inherit;
 		float: left;
 		height: 100%;
 		position: relative;
+		overflow: hidden;
 
-		img {
+		.image {
+			color: inherit;
+			float: left;
+			width: 145px;
 			height: 100%;
+			position: relative;
+			background: url(../images/conicle_logo_white.png) center center no-repeat;
+			background-size: contain;
+		}
+
+		span {
+			color: inherit;
+			float: left;
+			height: 50px;
+			font-size: 13px;
+			line-height: 70px;
 		}
 	}
 
 	.menu {
+		color: inherit;
 		float: right;
 		height: 100%;
+		padding: 10px 0 5px;
 		position: relative;
+		@include box-sizing;
 
 		ul {
+			color: inherit;
 			height: 100%;
 			margin: 0px;
 			padding: 0px;
@@ -113,18 +135,57 @@ section {
 			overflow: hidden;
 
 			li {
+				color: inherit;
 				float: left;
 				height: 100%;
 				padding: 0 10px;
 				position: relative;
 
 				a {
+					color: inherit;
 					height: 100%;
 					display: block;
-					line-height: 50px;
+					line-height: 35px;
 					text-decoration: none;
 					font-family: $font-highlight;
 					font-weight: bold;
+					@include animate();
+
+					&.button {
+						min-width: auto;
+
+						&:hover {
+							color: $white;
+							background: $red;
+							border-color: $red !important;
+						}
+					}
+
+					&:hover {
+						color: $red;
+					}
+				}
+			}
+		}
+	}
+
+	&.showed {
+		color: $black;
+		background: $white;
+		@include box-shadow(rgba(0, 0, 0, 0.3), 0px, 0px, 5px);
+
+		.logo {
+			.image {
+				background-image: url(../images/conicle_logo_red.png);
+			}
+		}
+
+		.menu {
+			ul {
+				li {
+					a.button {
+						border-color: $black;
+					}
 				}
 			}
 		}
@@ -134,7 +195,7 @@ section {
 #hook {
 	height: 100%;
 	padding-top: 100px;
-	background: url(../images/image.jpg) center center no-repeat;
+	background: url(../images/first.jpg) center center no-repeat;
 	background-size: cover;
 
 	.wrap {
@@ -178,6 +239,10 @@ section {
 			position: relative;
 			text-align: center;
 			@include box-sizing;
+
+			button {
+				margin: 0 10px;
+			}
 		}
 	}
 }
@@ -252,9 +317,9 @@ section {
 	}
 
 	.bg {
-		right: -5%;
-		bottom: 10%;
-		width: 60%;
+		right: -15%;
+		bottom: 0%;
+		width: 70%;
 		position: absolute;
 
 		img {
@@ -279,7 +344,6 @@ section {
 		min-width: 300px;
 		padding: 0px;
 		margin: 0px;
-		margin-top: 50px;
 		list-style: none;
 		position: relative;
 		display: inline-block;
@@ -287,10 +351,9 @@ section {
 		li {
 			width: 100%;
 			padding-left: 90px;
-			padding-bottom: 20px;
 			position: relative;
 			background: url(../images/icon-test.png) left top no-repeat;
-			background-size: 70px;
+			background-size: 60px;
 			@include box-sizing;
 
 			h6 {
@@ -300,7 +363,7 @@ section {
 
 			p {
 				width: 100%;
-				font-size: 14px;
+				font-size: 12px;
 				font-weight: bold;
 				font-family: $font;
 				text-align: left;
@@ -335,7 +398,7 @@ section {
 		display: block;
 		text-align: center;
 		text-align-last: center;
-		font-size: 16px;
+		font-size: 14px;
 		font-family: $font-highlight;
 	}
 
@@ -343,7 +406,7 @@ section {
 		width: 100%;
 		max-width: 1000px;
 		margin: 0 auto;
-		padding-top: 20px;
+		padding-top: 40px;
 		position: relative;
 		overflow: hidden;
 
@@ -354,7 +417,7 @@ section {
 			position: relative;
 			@include box-sizing;
 
-			h5 {
+			h6 {
 				width: 100%;
 				display: block;
 				text-align: center;
@@ -363,9 +426,9 @@ section {
 			span {
 				width: 100%;
 				color: $red;
-				padding: 20px 0;
-				font-size: 60px;
-				line-height: 60px;
+				padding: 40px 0;
+				font-size: 80px;
+				line-height: 80px;
 				display: inline-block;
 				position: relative;
 				text-align: center;
@@ -385,8 +448,7 @@ section {
 
 	.wrap {
 		width: 100%;
-		padding: 20px;
-		padding-top: 50px;
+		padding: 50px 20px;
 		position: relative;
 		@include box-sizing;
 	}
@@ -430,7 +492,8 @@ section {
 
 			span {
 				width: 100%;
-				padding: 20px 0;
+				font-size: 20px;
+				padding: 35px 0;
 				display: inline-block;
 				text-align: center;
 				border: 1px solid $white;
@@ -488,11 +551,11 @@ section {
 				position: relative;
 				display: inline-block;
 
-				h4 {
+				h3 {
 					margin: 0;
 				}
 
-				h3 {
+				h1 {
 					text-transform: uppercase;
 				}
 
@@ -504,8 +567,8 @@ section {
 			}
 		}
 
-		h4 {
-			margin-top: 50px;
+		h3 {
+			margin-top: 30px;
 		}
 
 		p {
@@ -531,7 +594,7 @@ section {
 					float: left;
 					width: 35%;
 					height: 25px;
-					font-size: 14px;
+					font-size: 16px;
 					font-family: $font-highlight;
 					padding-left: 30px;
 					position: relative;

@@ -58,34 +58,42 @@ textarea
 {
 	height: 100px;
 }
-
+.button,
 button,
 button[type='button'],
 button[type='submit'],
 {
 	color: $btn-text-color;
 	min-width: 150px;
-	height: 45px;
-	line-height: 35px;
+	height: 40px;
+	line-height: 25px;
 	padding: 0 10px;
 	display: inline-block;
 	background: rgba(255, 255, 255, 0);
-	border: 2px solid $btn-border-color;
-	font-size: 18px !important;
+	border: 1px solid $btn-border-color;
+	font-size: 16px !important;
 	font-family: $font-highlight !important;
-	text-transform: uppercase;
 	
 	@include animate();
 	@include box-sizing();
 	@include border-radius(5px);
-}
 
-button:hover, button[type='submit']:hover
-{
-	color: $black;
-	background: rgba(255, 255, 255, 0.8);
-	border-color: $btn-border-hover-color;
-	@include box-shadow(rgba(0, 0, 0, 0.3), 0px, 0px, 10px);
+	&:hover { 
+		color: $black;
+		background: rgba(255, 255, 255, 1);
+		border-color: $btn-border-hover-color;
+	}
+
+	&.red {
+		border-color: $red;
+		background-color: $red;
+
+		&:hover { 
+			color: $white;
+			border-color: #ff2626;
+			background-color: #ff2626;
+		}
+	}
 }
 
 select

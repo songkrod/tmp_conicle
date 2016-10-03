@@ -2,6 +2,7 @@
 	<head>
 		<title>Conicle</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<link rel="icon" href="public/images/conicle.ico" type="image/x-icon">
 		<link rel='stylesheet' type='text/css' href='public/css/main.css'>
 		<script type='text/javascript' src='public/libs/angular/angular.min.js'></script>
 		<script type='text/javascript' src='public/libs/angular-ui-router/release/angular-ui-router.min.js'></script>
@@ -10,6 +11,7 @@
 		<script type='text/javascript' src='public/modules/core/core.client.module.js'></script>
 		<script type='text/javascript' src='public/modules/page/page.client.module.js'></script>
 		<!-- Directive -->
+		<script type='text/javascript' src='public/modules/core/directive/sticky.client.directive.js'></script>
 		<!-- Route -->
 		<script type='text/javascript' src='public/modules/core/config/core.client.route.js'></script>
 		<script type='text/javascript' src='public/modules/page/config/page.client.route.js'></script>
@@ -23,10 +25,10 @@
 			<div class="wrap">
 				<h1>Re-thinking eLearning</h1>
 				<h5>Develop, Engage, Track Results with Blended Learning PLatform</h5>
-				<p>Redefining Enterprise Training and HRD with Mobile First Learning solution making it Faster, Easier and Smarter Anywhere, Anytime.</p>
+				<p>Redefining Enterprise Training and HRD with Mobile First Learning solution making it Faster, Easier, and Smarter Anywhere, Anytime.</p>
 				<div class="btn">
-					<button>Test</button>
-					<button>Test</button>
+					<button class="red">Learn more</button>
+					<button>Request for Demo</button>
 				</div>
 			</div>
 		</section>
@@ -73,17 +75,17 @@
 				<p>Based on CEB, INc. 2015 study of 2,000 customers</p>
 				<div class="box-wrap">
 					<div class="box">
-						<h5>Real-world Implementation</h5>
+						<h6>Real-world Implementation</h6>
 						<span>89%</span>
 						<p>of members said Pluralsight has helped them learn a skill needed for their company or job.</p>
 					</div>
 					<div class="box">
-						<h5>More time and productivity</h5>
+						<h6>More time and productivity</h6>
 						<span>84</span>
 						<p>hours per year saved from watching Pluralsight just 1 hour per week due to increased productivity.</p>
 					</div>
 					<div class="box">
-						<h5>Stay current</h5>
+						<h6>Stay current</h6>
 						<span>93%</span>
 						<p>of managers say Pluralsight is an important tool for their teams to keep up with the fast pace of change in technology.</p>
 					</div>
@@ -121,15 +123,15 @@
 				<div class="content">
 					<div class="title-wrap">
 						<div class="title">
-							<h4>Conicle</h4>
-							<h3>Ondemand</h3>
+							<h3>Conicle</h3>
+							<h1>Ondemand</h1>
 						</div>
 						<div class="title">
-							<h4>Conicle</h4>
-							<h3>Live</h3>
+							<h3>Conicle</h3>
+							<h1>Live</h1>
 						</div>
 					</div>
-					<h4>All-in-One Ondemand Training</h4>
+					<h3>All-in-One Ondemand Training</h3>
 					<p>Develop people anywhere, anytime via web and mobile includeing Online Courses, Interactive Test, Programs, Assignment, Registration, Notification, Progress Tracking, Discussion board, and also Administration for Content Management, Dashboard and Report</p>
 					<div class="feature-list">
 						<ul>
@@ -168,11 +170,11 @@
 				<div class="content">
 					<div class="title-wrap">
 						<div class="title">
-							<h4>Conicle</h4>
-							<h3>Connect</h3>
+							<h3>Conicle</h4>
+							<h1>Connect</h2>
 						</div>
 					</div>
-					<h4>Event Management Platform</h4>
+					<h3>Event Management Platform</h3>
 					<p>Event & Workshop Center including Workshops Update, Online Register, Check-in, Prework, Event Activities, Evaluation, Testing, Post Event and also Administration for articipant Insight, Check-in Report, Activity Report, and Evaluation Report</p>
 					<div class="feature-list">
 						<ul>
@@ -244,18 +246,23 @@
 				<img src="public/images/circle2.jpg">
 			</div>
 		</section>
-		<section id="box9"></section>
+		<section id="box9">
+			//
+		</section>
 		<section id="box10"></section>
-		<div id="nav">
+		<div id="nav" data-sticky-nav='{name:"Hi"}'>
 			<div class="logo">
-				<img src="public/images/conicle_logo_white.png">
+				<div class="image"></div>
+				<span>Empower Smart Enterprise</span>
 			</div>
 			<div class="menu">
 				<ul>
-					<li><a href="">What</a></li>
-					<li><a href="">Thing</a></li>
-					<li><a href="">Test</a></li>
-					<li><a href="">Link</a></li>
+					<li><a href="">Home</a></li>
+					<li><a href="">Solutions</a></li>
+					<li><a href="">Products</a></li>
+					<li><a href="">Our Customers</a></li>
+					<li><a href="">Contact us</a></li>
+					<li><a class="button" href="">Donwload PDF</a></li>
 				</ul>
 			</div>
 		</div>
