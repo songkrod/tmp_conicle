@@ -1,0 +1,687 @@
+@import 'color';
+@import 'font';
+@import 'var';
+@import 'mixin';
+@import 'reset';
+@import 'input';
+
+div, ul, li, a, p, span, h1, h2, h3, h4, h5, h6, b, form, label, input, button, select, option {
+	color: $text-white;
+	font-family: $font;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+h1 {
+	font-size: 50px;
+	line-height: 60px;
+	font-weight: bold;
+	font-family: $font-highlight;
+	margin-bottom: 10px 0px 20px;
+}
+
+h2 {
+	font-size: 40px;
+	line-height: 50px;
+	font-weight: bold;
+	font-family: $font-highlight;
+	margin-bottom: 10px 0px 20px;
+}
+
+h3 {
+	font-size: 35px;
+	line-height: 38px;
+	font-weight: bold;
+	font-family: $font-highlight;
+	margin-bottom: 10px 0px 20px;
+}
+
+h4 {
+	font-size: 25px;
+	line-height: 30px;
+	font-weight: bold;
+	font-family: $font-highlight;
+	margin: 10px 0px 15px;
+}
+
+h5 {
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: bold;
+	font-family: $font-highlight;
+	margin: 10px 0px 15px;
+}
+
+h6 {
+	font-size: 18px;
+	line-height: 23px;
+	font-weight: bold;
+	font-family: $font-highlight;
+	margin: 10px 0px 15px;
+}
+
+p {
+	font-size: 12px;
+	text-align: justify;
+	text-align-last: left;
+	margin-bottom: 30px;
+}
+
+body {
+	height: 100%;
+	max-height: 100%;
+}
+
+section {
+	width: 100%;
+	position: relative;
+	@include box-sizing;
+}
+
+#nav {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	padding: 10px;
+
+	@include box-sizing;
+
+	.logo {
+		float: left;
+		height: 100%;
+		position: relative;
+
+		img {
+			height: 100%;
+		}
+	}
+
+	.menu {
+		float: right;
+		height: 100%;
+		position: relative;
+
+		ul {
+			height: 100%;
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			position: relative;
+			display: inline-block;
+			overflow: hidden;
+
+			li {
+				float: left;
+				height: 100%;
+				padding: 0 10px;
+				position: relative;
+
+				a {
+					height: 100%;
+					display: block;
+					line-height: 50px;
+					text-decoration: none;
+					font-family: $font-highlight;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+#hook {
+	height: 100%;
+	padding-top: 100px;
+	background: url(../images/image.jpg) center center no-repeat;
+	background-size: cover;
+
+	.wrap {
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		width: 100%;
+		padding-bottom: 100px;
+		max-width: 800px;
+		margin: auto;
+		position: absolute;
+
+		h1 {
+			width: 100%;
+			display: block;
+			text-align: center;
+		}
+
+		h5 {
+			width: 100%;
+			display: block;
+			text-align: center;
+		}
+
+		p {
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+			font-size: 15px;
+			max-width: 500px;
+			text-align: center;
+			text-align-last: center;
+			font-family: $font-highlight;
+
+			@include box-sizing;
+		}
+
+		.btn {
+			width: 100%;
+			padding: 20px 0;
+			position: relative;
+			text-align: center;
+			@include box-sizing;
+		}
+	}
+}
+
+#box1 {
+	height: 100px;
+	padding: 20px;
+
+	ul {
+		width: 100%;
+		max-width: 1000px;
+		height: 100%;
+		margin: 0 auto;
+		padding: 0px;
+		list-style: none;
+		position: relative;
+		display: block;
+		overflow: hidden;
+
+		li {
+			float: left;
+			width: 16%;
+			height: 100%;
+			padding: 0 10px;
+			@include box-sizing;
+
+			span {
+				width: 100%;
+				height: 100%;
+				display: block;
+				background: center center no-repeat;
+				background-size: contain;
+
+				&.logo-ais {
+					background-image: url(../images/logo-ais.png);
+				}
+
+				&.logo-unilever {
+					background-image: url(../images/logo-unilever.png);
+				}
+
+				&.logo-pacrim {
+					background-image: url(../images/logo-pacrim.png);
+				}
+
+				&.logo-aims {
+					background-image: url(../images/logo-aims.png);
+				}
+
+				&.logo-cc {
+					background-image: url(../images/logo-click4clever.png);
+				}
+
+				&.logo-hm {
+					background-image: url(../images/logo-hms.png);
+				}
+			}
+		}
+	}
+}
+
+#box2 {
+	.wrap {
+		width: 100%;
+		min-height: 100%;
+		padding: 50px;
+		padding-bottom: 0;
+		position: relative;
+		overflow: hidden;
+		display: inline-block;
+		@include box-sizing;
+	}
+
+	.bg {
+		right: -5%;
+		bottom: 10%;
+		width: 60%;
+		position: absolute;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	h3 {
+		color: $red;
+	}
+
+	p {
+		width: 50%;
+		color: $text-black;
+		font-size: 16px;
+		font-family: $font-highlight;
+		display: block;
+	}
+
+	ul {
+		width: 40%;
+		min-width: 300px;
+		padding: 0px;
+		margin: 0px;
+		margin-top: 50px;
+		list-style: none;
+		position: relative;
+		display: inline-block;
+
+		li {
+			width: 100%;
+			padding-left: 90px;
+			padding-bottom: 20px;
+			position: relative;
+			background: url(../images/icon-test.png) left top no-repeat;
+			background-size: 70px;
+			@include box-sizing;
+
+			h6 {
+				color: $red;
+				margin: 0;
+			}
+
+			p {
+				width: 100%;
+				font-size: 14px;
+				font-weight: bold;
+				font-family: $font;
+				text-align: left;
+			}
+		}
+	}
+}
+
+#box3 {
+	background: $black;
+
+	.wrap {
+		width: 100%;
+		padding: 20px;
+		padding-top: 50px;
+		position: relative;
+		@include box-sizing;
+	}
+
+	h3 {
+		width: 100%;
+		margin-bottom: 10px;
+		display: block;
+		text-align: center;
+		font-family: $font;
+		font-weight: normal;
+	}
+
+	p {
+		color: $gray-light;
+		width: 100%;
+		display: block;
+		text-align: center;
+		text-align-last: center;
+		font-size: 16px;
+		font-family: $font-highlight;
+	}
+
+	.box-wrap {
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+		padding-top: 20px;
+		position: relative;
+		overflow: hidden;
+
+		.box {
+			float: left;
+			width: 33.33%;
+			padding: 20px;
+			position: relative;
+			@include box-sizing;
+
+			h5 {
+				width: 100%;
+				display: block;
+				text-align: center;
+			}
+
+			span {
+				width: 100%;
+				color: $red;
+				padding: 20px 0;
+				font-size: 60px;
+				line-height: 60px;
+				display: inline-block;
+				position: relative;
+				text-align: center;
+			}
+
+			p {
+				color: $gray-light;
+				font-size: 14px;
+				font-family: $font;
+			}
+		}
+	}
+}
+
+#box4 {
+	background: $red;
+
+	.wrap {
+		width: 100%;
+		padding: 20px;
+		padding-top: 50px;
+		position: relative;
+		@include box-sizing;
+	}
+
+	h3 {
+		width: 100%;
+		text-align: center;
+	}
+
+	.image {
+		width: 100%;
+		max-width: 1000px;
+		padding: 20px;
+		margin: 0 auto;
+		position: relative;
+		@include box-sizing;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	h5 {
+		width: 100%;
+		text-align: center;
+	}
+
+	.box-wrap {
+		width: 100%;
+		max-width: 1100px;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+
+		.box {
+			float: left;
+			width: 25%;
+			padding: 10px;
+			position: relative;
+			@include box-sizing;
+
+			span {
+				width: 100%;
+				padding: 20px 0;
+				display: inline-block;
+				text-align: center;
+				border: 1px solid $white;
+				font-family: $font-highlight;
+
+				@include border-radius(10px);
+			}
+		}
+	}
+}
+
+#box5, #box6 {
+	background: url(../images/ondemand.jpg) center top no-repeat;
+	background-size: cover;
+	text-align: center;
+
+	.wrap {
+		max-width: 100%;
+		padding: 50px 20px 20px;
+		margin: 0 auto;
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
+		@include box-sizing;
+	}
+
+	.phone {
+		float: left;
+		width: 30%;
+		padding: 0 50px;
+		position: relative;
+		@include box-sizing;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.content {
+		float: left;
+		width: 70%;
+		max-width: 790px;
+		padding: 0 50px;
+		position: relative;
+		text-align: left;
+		@include box-sizing;
+
+		.title-wrap {
+			width: 100%;
+			position: relative;
+			overflow: hidden;
+
+			.title {
+				float: left;
+				position: relative;
+				display: inline-block;
+
+				h4 {
+					margin: 0;
+				}
+
+				h3 {
+					text-transform: uppercase;
+				}
+
+				&:nth-child(2) {
+					margin-left: 40px;
+					padding-left: 40px;
+					border-left: 1px solid $white;
+				}
+			}
+		}
+
+		h4 {
+			margin-top: 50px;
+		}
+
+		p {
+			font-size: 14px;
+			max-width: 600px;
+			font-family: $font-highlight;
+		}
+
+		.feature-list {
+			width: 100%;
+			position: relative;
+
+			ul {
+				width: 100%;
+				padding: 0px;
+				margin: 0px;
+				list-style: none;
+				position: relative;
+				display: inline-block;
+				overflow: hidden;
+
+				li {
+					float: left;
+					width: 35%;
+					height: 25px;
+					font-size: 14px;
+					font-family: $font-highlight;
+					padding-left: 30px;
+					position: relative;
+					background: url(../images/list-feature.png) left top no-repeat;
+					background-size: 15px;
+					@include box-sizing;
+				}
+			}
+		}
+	}
+
+	.foot {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+
+		.box {
+			float: left;
+			width: 33.33%;
+			padding: 20px 40px;
+			position: relative;
+			@include box-sizing;
+
+			p {
+				font-size: 14px;
+				text-align: center;
+				text-align-last: center;
+			}
+
+			&:nth-child(1) {
+				background-color: #31859c;
+			}
+
+			&:nth-child(2) {
+				background-color: #ff6600;
+			}
+
+			&:nth-child(3) {
+				background-color: #c5c300;
+			}
+		}
+	}
+}
+
+#box6 {
+	.phone, .content {
+		float: right !important;
+	}
+
+	.foot {
+		.box {
+			&:nth-child(1) {
+				background-color: #0078ff;
+			}
+
+			&:nth-child(2) {
+				background-color: #ff0048;
+			}
+
+			&:nth-child(3) {
+				background-color: #00c56c;
+			}
+		}
+	}
+}
+
+#box7 {
+	.wrap {
+		width: 100%;
+		padding: 50px 20px 20px;
+		position: relative;
+		@include box-sizing;
+	}
+
+	h3 {
+		color: $red;
+		width: 100%;
+		text-align: center;
+	}
+
+	p {
+		color: $black;
+		font-size: 16px;
+		font-family: $font-highlight;
+		text-align: center;
+		text-align-last: center;
+	}
+
+	.box-wrap {
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+
+		.box {
+			float: left;
+			width: 33.33%;
+			position: relative;
+
+			h5 {
+				color: $red;
+			}
+
+			ul {
+				width: 100%;
+				margin: 0px;
+				list-style: none;
+				margin-left: 5px;
+				padding: 10px 0px 10px 20px;
+				position: relative;
+				border-left: 5px solid $red;
+				@include box-sizing;
+
+				li {
+					color: $black;
+					font-family: $font-highlight;
+				}
+			}
+		}
+	}
+
+	.bg {
+		width: 100%;
+		height: 400px;
+		position: relative;
+		background: url(../images/admin.png) center top 100px no-repeat;
+		background-size: 50% auto;
+	}
+}
+
+#box8 {
+	background-color: #edecec;
+
+	.image {
+		width: 100%;
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+/*
+31859c
+ff6600
+c5c300
+
+0078ff
+ff0048
+00c56c
+*/
