@@ -756,6 +756,19 @@ section {
 		text-align: center;
 	}
 
+	.slide-wrap {
+		width: 100%;
+		position: relative;
+	}
+
+	.slide-pack {
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+
 	.slide {
 		width: 100%;
 		max-width: 1000px;
@@ -783,9 +796,10 @@ section {
 
 			.image {
 				top: 0px;
-				left: 0px;
+				left: -10%;
 				width: 100%;
 				height: 100%;
+				opacity: 0;
 				position: absolute;
 
 				img {
@@ -798,6 +812,7 @@ section {
 				right: 0px;
 				width: 50%;
 				height: 100%;
+				opacity: 0;
 				position: absolute;
 
 				svg {
@@ -808,13 +823,14 @@ section {
 
 			.content {
 				top: 0px;
-				right: 0px;
+				right: -10%;
 				width: 40%;
 				height: 100%;
 				padding: 70px 50px;
 				position: absolute;
 				text-align: right;
 				@include box-sizing;
+				opacity: 0;
 
 				.logo {
 					width: 70%;
@@ -862,6 +878,10 @@ section {
 				cursor: pointer;
 
 				@include border-radius(50%);
+
+				&.active {
+					background: $red;
+				}
 			}
 		}
 	}
